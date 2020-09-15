@@ -19,7 +19,7 @@ body{
 
 .wrapper{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: start;
     width: 60%;
     height: 100vh;
@@ -27,43 +27,97 @@ body{
 
 .cellphone{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    width: 50%;
+    height: 50rem;
+    width: 60%;
 }
 
-.cellphone img{
-    height: 50rem;
-}
 
 .login {
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: 34rem;
-    width: 50%;
+    width: 40%;
 }
 
 .login-box {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
     flex-direction: column;
+    justify-content: space-between; /* vertical */
+    align-items: center;
     background-color: white;
     padding: 1.3rem 0;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
 }
-
-.login-box-logo img{
-    height: 5rem;
+.login-box:nth-child(1){
+    min-height: 19rem;
+}
+.login-box-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .login-box-profile img{
-    height: 20rem;
+    height: 6rem;
+    width: 6rem;
 }
 
-.login-getapp img{
-    height: 2rem;
+.login-box-logo{
+    height: 3rem;
+}
+
+.login-link-continue{
+    background-color: #4898ff;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.login-plain-text{
+    color: gray;
+}
+
+.login-link{
+    color: #4898ff;
+    font-weight: bold;
+}
+
+.login-getapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.3rem 0;
+    width: 100%;
+}
+
+.login-getapp-download{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.login-getapp-download-link{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.login-getapp-download-link:nth-child(1){
+    background-image: url('./img/appstore.png');
+}
+
+.login-getapp-download-link:nth-child(2){
+    background-image: url('./img/playstore.png');
 }
